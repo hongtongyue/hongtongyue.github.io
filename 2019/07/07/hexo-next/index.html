@@ -102,7 +102,7 @@
 <meta property="og:site_name" content="红豆的专栏">
 <meta property="og:description" content="本文介绍Hexo + NexT搭建个人Github个博客。 简介Hexo 是一个快速、简洁且高效的博客框架。Hexo 使用 Markdown（或其他渲染引擎）解析文章，在几秒内，即可利用靓丽的主题生成静态网页。     安装安装前提安装 Hexo 相当简单。然而在安装前，您必须检查电脑中是否已安装下列应用程序：  Node.js (至少nodejs 6.9)  Git   安装Hexo1npm i">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2019-07-08T11:09:04.637Z">
+<meta property="og:updated_time" content="2019-07-10T13:25:49.235Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="使用Hexo+NexT搭建Github个人博客">
 <meta name="twitter:description" content="本文介绍Hexo + NexT搭建个人Github个博客。 简介Hexo 是一个快速、简洁且高效的博客框架。Hexo 使用 Markdown（或其他渲染引擎）解析文章，在几秒内，即可利用靓丽的主题生成静态网页。     安装安装前提安装 Hexo 相当简单。然而在安装前，您必须检查电脑中是否已安装下列应用程序：  Node.js (至少nodejs 6.9)  Git   安装Hexo1npm i">
@@ -392,7 +392,7 @@
                 
                   <span class="post-meta-item-text">更新于</span>
                 
-                <time title="修改时间：2019-07-08 19:09:04" itemprop="dateModified" datetime="2019-07-08T19:09:04+08:00">2019-07-08</time>
+                <time title="修改时间：2019-07-10 21:25:49" itemprop="dateModified" datetime="2019-07-10T21:25:49+08:00">2019-07-10</time>
               </span>
             
           
@@ -464,13 +464,56 @@
 <h4 id="配置"><a href="#配置" class="headerlink" title="配置"></a>配置</h4><p>该项主要对上面目录结构中的_config.yml进行配置，只记录在搭建个人博客时使用的配置，其他请读者执行了解。</p>
 <figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 标题修改</span></span><br><span class="line"><span class="attr">title:</span> <span class="string">红豆的专栏</span></span><br><span class="line"><span class="comment"># 作者修改</span></span><br><span class="line"><span class="attr">author:</span> <span class="string">红豆/hongtongyue</span></span><br><span class="line"><span class="comment"># 语言的修改，默认是英文，修改为中文</span></span><br><span class="line"><span class="attr">language:</span> <span class="string">zh-CN</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 修改主题为NexT，后面会介绍</span></span><br><span class="line"><span class="attr">theme:</span> <span class="string">next</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 部署配置</span></span><br><span class="line"><span class="attr">deploy:</span></span><br><span class="line"><span class="attr">  type:</span> <span class="string">git</span></span><br><span class="line"><span class="attr">  repository:</span> <span class="attr">https://github.com/自己ID/自己ID.github.io.git</span></span><br><span class="line"><span class="attr">  branch:</span> <span class="string">master</span></span><br></pre></td></tr></table></figure>
 
+<h4 id="hexo常用命令"><a href="#hexo常用命令" class="headerlink" title="hexo常用命令"></a>hexo常用命令</h4><p><strong>新建一个网站</strong></p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo init</span><br></pre></td></tr></table></figure>
+
+<p><strong>生成静态文件</strong></p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 全称</span></span><br><span class="line">hexo generate</span><br><span class="line"><span class="comment"># 简写</span></span><br><span class="line">hexo g</span><br></pre></td></tr></table></figure>
+
+<table>
+<thead>
+<tr>
+<th>选项</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>-d, –deploy</td>
+<td>文件生成后立即部署网站</td>
+</tr>
+<tr>
+<td>-w, –watch</td>
+<td>监视文件变动</td>
+</tr>
+</tbody></table>
+<p><strong>启动服务器</strong>。默认情况下，访问网址为： <code>http://localhost:4000/</code></p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo server</span><br></pre></td></tr></table></figure>
+
+<p><strong>部署网站</strong></p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 全称</span></span><br><span class="line">hexo deploy</span><br><span class="line"><span class="comment"># 简写</span></span><br><span class="line">hexo d</span><br></pre></td></tr></table></figure>
+
+<table>
+<thead>
+<tr>
+<th>选项</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>-g, –generate</td>
+<td>部署网站之前先生成静态文件</td>
+</tr>
+</tbody></table>
+<p><strong>清理缓存文件（db.json）已经publish目录</strong></p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo clean</span><br></pre></td></tr></table></figure>
+
 <h3 id="主题"><a href="#主题" class="headerlink" title="主题"></a>主题</h3><p>hexo下有多个主题可以使用，本人搭建Github博客时使用的就是NexT主题，该主题简洁漂亮大方。</p>
 <h4 id="下载NexT主题"><a href="#下载NexT主题" class="headerlink" title="下载NexT主题"></a>下载NexT主题</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git <span class="built_in">clone</span> https://github.com/theme-next/hexo-theme-next themes/next</span><br></pre></td></tr></table></figure>
 
 <h4 id="修改配置"><a href="#修改配置" class="headerlink" title="修改配置"></a>修改配置</h4><p>主题配置路径themes/next/_config.yml</p>
 <figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 有多种模式可以选择</span></span><br><span class="line"><span class="attr">scheme:</span> <span class="string">Pisces</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 每个文章之间不显示完全，显示阅读全文按钮</span></span><br><span class="line"><span class="comment"># 也可以通过在文章中添加 &lt;!-- more --&gt; 以便精确控制</span></span><br><span class="line"><span class="attr">auto_excerpt:</span></span><br><span class="line"><span class="attr">  enable:</span> <span class="literal">true</span></span><br><span class="line"><span class="attr">  length:</span> <span class="number">150</span></span><br><span class="line">  </span><br><span class="line"><span class="attr">menu:</span></span><br><span class="line">  <span class="comment"># 显示主页</span></span><br><span class="line"><span class="attr">  home:</span> <span class="string">/</span> <span class="string">||</span> <span class="string">home</span>  </span><br><span class="line">  <span class="comment"># 显示关于</span></span><br><span class="line"><span class="attr">  about:</span> <span class="string">/about/</span> <span class="string">||</span> <span class="string">user</span></span><br><span class="line">  <span class="comment"># 显示标签</span></span><br><span class="line"><span class="attr">  tags:</span> <span class="string">/tags/</span> <span class="string">||</span> <span class="string">tags</span></span><br><span class="line">  <span class="comment"># 显示分类</span></span><br><span class="line"><span class="attr">  categories:</span> <span class="string">/categories/</span> <span class="string">||</span> <span class="string">th</span></span><br><span class="line">  <span class="comment"># 显示归档</span></span><br><span class="line"><span class="attr">  archives:</span> <span class="string">/archives/</span> <span class="string">||</span> <span class="string">archive</span></span><br><span class="line">  <span class="comment">#schedule: /schedule/ || calendar</span></span><br><span class="line">  <span class="comment">#sitemap: /sitemap.xml || sitemap</span></span><br><span class="line">  <span class="comment">#commonweal: /404/ || heartbeat</span></span><br></pre></td></tr></table></figure>
 
-<h3 id="新建关于、标签、分类页面"><a href="#新建关于、标签、分类页面" class="headerlink" title="新建关于、标签、分类页面"></a>新建关于、标签、分类页面</h3><p>在主题中配置标签、分类菜单后还不能正常显示，需要新建关于、标签、分类页面</p>
+<h3 id="新建关于、标签、分类、文章页面"><a href="#新建关于、标签、分类、文章页面" class="headerlink" title="新建关于、标签、分类、文章页面"></a>新建关于、标签、分类、文章页面</h3><p>在主题中配置标签、分类菜单后还不能正常显示，需要新建关于、标签、分类页面</p>
 <h4 id="新建关于页面"><a href="#新建关于页面" class="headerlink" title="新建关于页面"></a>新建关于页面</h4><p>在博客所在的根目录下执行</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo new page about</span><br></pre></td></tr></table></figure>
 
@@ -492,6 +535,12 @@
 
 <p>给文章添加分类</p>
 <figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">---</span><br><span class="line">title: 使用Hexo+NexT搭建Github个人博客</span><br><span class="line">date: 2019-07-07 14:53:50</span><br><span class="line">categories: 技术</span><br><span class="line">---</span><br></pre></td></tr></table></figure>
+
+<h4 id="新建文章"><a href="#新建文章" class="headerlink" title="新建文章"></a>新建文章</h4><p>在博客所在的根目录下执行</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo new post post-title</span><br></pre></td></tr></table></figure>
+
+<p>执行上面命令后会在source/_posts目录下生成一个post-title.md，新增内容，发布新的文章</p>
+<figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="section"># 当前文章大标题</span></span><br><span class="line">title: 使用Hexo+NexT搭建Github个人博客</span><br><span class="line"><span class="section"># 文章创建时间</span></span><br><span class="line">date: 2019-07-07 14:53:50</span><br><span class="line"><span class="section"># 当前文章的标签</span></span><br><span class="line">tags: [Hexo, NexT]</span><br><span class="line"><span class="section"># 当前文章所属的分离</span></span><br><span class="line">categories: 技术</span><br></pre></td></tr></table></figure>
 
 
       
@@ -693,7 +742,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#简介"><span class="nav-number">1.</span> <span class="nav-text">简介</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#安装"><span class="nav-number">2.</span> <span class="nav-text">安装</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#安装前提"><span class="nav-number">2.1.</span> <span class="nav-text">安装前提</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#安装Hexo"><span class="nav-number">2.2.</span> <span class="nav-text">安装Hexo</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#建站"><span class="nav-number">2.3.</span> <span class="nav-text">建站</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#配置"><span class="nav-number">2.4.</span> <span class="nav-text">配置</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#主题"><span class="nav-number">3.</span> <span class="nav-text">主题</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#下载NexT主题"><span class="nav-number">3.1.</span> <span class="nav-text">下载NexT主题</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#修改配置"><span class="nav-number">3.2.</span> <span class="nav-text">修改配置</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#新建关于、标签、分类页面"><span class="nav-number">4.</span> <span class="nav-text">新建关于、标签、分类页面</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#新建关于页面"><span class="nav-number">4.1.</span> <span class="nav-text">新建关于页面</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#新建标签页面"><span class="nav-number">4.2.</span> <span class="nav-text">新建标签页面</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#新建分类页面"><span class="nav-number">4.3.</span> <span class="nav-text">新建分类页面</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#简介"><span class="nav-number">1.</span> <span class="nav-text">简介</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#安装"><span class="nav-number">2.</span> <span class="nav-text">安装</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#安装前提"><span class="nav-number">2.1.</span> <span class="nav-text">安装前提</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#安装Hexo"><span class="nav-number">2.2.</span> <span class="nav-text">安装Hexo</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#建站"><span class="nav-number">2.3.</span> <span class="nav-text">建站</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#配置"><span class="nav-number">2.4.</span> <span class="nav-text">配置</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#hexo常用命令"><span class="nav-number">2.5.</span> <span class="nav-text">hexo常用命令</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#主题"><span class="nav-number">3.</span> <span class="nav-text">主题</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#下载NexT主题"><span class="nav-number">3.1.</span> <span class="nav-text">下载NexT主题</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#修改配置"><span class="nav-number">3.2.</span> <span class="nav-text">修改配置</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#新建关于、标签、分类、文章页面"><span class="nav-number">4.</span> <span class="nav-text">新建关于、标签、分类、文章页面</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#新建关于页面"><span class="nav-number">4.1.</span> <span class="nav-text">新建关于页面</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#新建标签页面"><span class="nav-number">4.2.</span> <span class="nav-text">新建标签页面</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#新建分类页面"><span class="nav-number">4.3.</span> <span class="nav-text">新建分类页面</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#新建文章"><span class="nav-number">4.4.</span> <span class="nav-text">新建文章</span></a></li></ol></li></ol></div>
             
 
           </div>
