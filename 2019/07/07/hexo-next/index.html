@@ -102,7 +102,7 @@
 <meta property="og:site_name" content="红豆的专栏">
 <meta property="og:description" content="本文介绍Hexo + NexT搭建个人Github个博客。 简介Hexo 是一个快速、简洁且高效的博客框架。Hexo 使用 Markdown（或其他渲染引擎）解析文章，在几秒内，即可利用靓丽的主题生成静态网页。     安装安装前提安装 Hexo 相当简单。然而在安装前，您必须检查电脑中是否已安装下列应用程序：  Node.js (至少nodejs 6.9)  Git   安装Hexo1npm i">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2019-07-10T13:25:49.235Z">
+<meta property="og:updated_time" content="2019-07-10T13:28:30.381Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="使用Hexo+NexT搭建Github个人博客">
 <meta name="twitter:description" content="本文介绍Hexo + NexT搭建个人Github个博客。 简介Hexo 是一个快速、简洁且高效的博客框架。Hexo 使用 Markdown（或其他渲染引擎）解析文章，在几秒内，即可利用靓丽的主题生成静态网页。     安装安装前提安装 Hexo 相当简单。然而在安装前，您必须检查电脑中是否已安装下列应用程序：  Node.js (至少nodejs 6.9)  Git   安装Hexo1npm i">
@@ -392,7 +392,7 @@
                 
                   <span class="post-meta-item-text">更新于</span>
                 
-                <time title="修改时间：2019-07-10 21:25:49" itemprop="dateModified" datetime="2019-07-10T21:25:49+08:00">2019-07-10</time>
+                <time title="修改时间：2019-07-10 21:28:30" itemprop="dateModified" datetime="2019-07-10T21:28:30+08:00">2019-07-10</time>
               </span>
             
           
@@ -464,10 +464,10 @@
 <h4 id="配置"><a href="#配置" class="headerlink" title="配置"></a>配置</h4><p>该项主要对上面目录结构中的_config.yml进行配置，只记录在搭建个人博客时使用的配置，其他请读者执行了解。</p>
 <figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 标题修改</span></span><br><span class="line"><span class="attr">title:</span> <span class="string">红豆的专栏</span></span><br><span class="line"><span class="comment"># 作者修改</span></span><br><span class="line"><span class="attr">author:</span> <span class="string">红豆/hongtongyue</span></span><br><span class="line"><span class="comment"># 语言的修改，默认是英文，修改为中文</span></span><br><span class="line"><span class="attr">language:</span> <span class="string">zh-CN</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 修改主题为NexT，后面会介绍</span></span><br><span class="line"><span class="attr">theme:</span> <span class="string">next</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 部署配置</span></span><br><span class="line"><span class="attr">deploy:</span></span><br><span class="line"><span class="attr">  type:</span> <span class="string">git</span></span><br><span class="line"><span class="attr">  repository:</span> <span class="attr">https://github.com/自己ID/自己ID.github.io.git</span></span><br><span class="line"><span class="attr">  branch:</span> <span class="string">master</span></span><br></pre></td></tr></table></figure>
 
-<h4 id="hexo常用命令"><a href="#hexo常用命令" class="headerlink" title="hexo常用命令"></a>hexo常用命令</h4><p><strong>新建一个网站</strong></p>
+<h4 id="hexo常用命令"><a href="#hexo常用命令" class="headerlink" title="hexo常用命令"></a>hexo常用命令</h4><p>新建一个网站</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo init</span><br></pre></td></tr></table></figure>
 
-<p><strong>生成静态文件</strong></p>
+<p>生成静态文件</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 全称</span></span><br><span class="line">hexo generate</span><br><span class="line"><span class="comment"># 简写</span></span><br><span class="line">hexo g</span><br></pre></td></tr></table></figure>
 
 <table>
@@ -486,10 +486,10 @@
 <td>监视文件变动</td>
 </tr>
 </tbody></table>
-<p><strong>启动服务器</strong>。默认情况下，访问网址为： <code>http://localhost:4000/</code></p>
+<p>启动服务器。默认情况下，访问网址为： <a href="http://localhost:4000/" target="_blank" rel="noopener">http://localhost:4000/</a></p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo server</span><br></pre></td></tr></table></figure>
 
-<p><strong>部署网站</strong></p>
+<p>部署网站</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 全称</span></span><br><span class="line">hexo deploy</span><br><span class="line"><span class="comment"># 简写</span></span><br><span class="line">hexo d</span><br></pre></td></tr></table></figure>
 
 <table>
@@ -504,7 +504,7 @@
 <td>部署网站之前先生成静态文件</td>
 </tr>
 </tbody></table>
-<p><strong>清理缓存文件（db.json）已经publish目录</strong></p>
+<p>清理缓存文件（db.json）已经publish目录</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo clean</span><br></pre></td></tr></table></figure>
 
 <h3 id="主题"><a href="#主题" class="headerlink" title="主题"></a>主题</h3><p>hexo下有多个主题可以使用，本人搭建Github博客时使用的就是NexT主题，该主题简洁漂亮大方。</p>
